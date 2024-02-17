@@ -25,9 +25,6 @@ The AWS SAM template is the heart of our serverless application deployment. It d
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/4b96c0d7-2317-4c87-8bc8-83827fbcc987)
 
-
-
-
 ## Create dynamo table with SAM 
 
 Here's an example of a simple AWS SAM template: Dynamo Table
@@ -65,6 +62,21 @@ dynamo-sam.ym
 packaged-dynamo.yml
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/ba01af36-e1e3-40b2-b393-484eaf21e5c2)
+
+# Deploying package
+
+To deploy the package rune the below command
+
+$ sam deploy --template-file packaged-dynamo.yml --stack-name dynamosamcreate
+
+The package is running and changeset created in cloudformation
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/dbd84155-7da4-405e-948b-f8e9e28db067)
+
+Let's see Cloudformation
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/4a86aec3-c128-4110-beff-0fbd07907913)
+
 
 
 
