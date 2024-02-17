@@ -54,6 +54,21 @@ Let's run this package:
 
 $ sam package --template-file dynamo-sam.yml --s3-bucket demo-test-101 --output-template-file packaged-dynamo.yml
 
+The pacckage is downloaded in SAM repo of Cloud9
+
+This packaged-dynamo.yml is the same as dynamo-sam.yml
+
+dynamo-sam.ym
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/07bb7fca-8254-4078-a9b4-d0ae619a5766)
+
+packaged-dynamo.yml
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/ba01af36-e1e3-40b2-b393-484eaf21e5c2)
+
+
+
+
 
 
 
