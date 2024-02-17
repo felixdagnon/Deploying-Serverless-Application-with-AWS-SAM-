@@ -85,7 +85,7 @@ Let's check in dynamo console
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/f7a4c56a-1940-4d0a-bc23-ccf686d9980a)
 
 
-# 1.Deploying basic lambda without any dependencies with SAM 
+# 2.Deploying basic lambda without any dependencies with SAM 
 
 Let's create simple lambda function (hello_country)
 
@@ -128,6 +128,12 @@ Resources:
         Description: Sample SAM lambda deployment
      
 ```
+
+# Create lambda template
+
+Let's run this package:
+
+$ sam package --template-file lambda-sam.yml --s3-bucket demo-test-101 --output-template-file packaged-lambda.yml
 
 
 
