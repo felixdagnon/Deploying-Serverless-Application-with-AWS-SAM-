@@ -19,7 +19,7 @@ Check SAM version in Cloud9
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/eaf75ddf-e533-4396-8099-7728550b1649)
 
-# Creating the AWS SAM Template
+# 1.Creating the AWS SAM Template
 
 The AWS SAM template is the heart of our serverless application deployment. It defines the resources and configurations required for our application. 
 
