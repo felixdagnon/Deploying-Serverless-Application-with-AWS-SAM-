@@ -45,6 +45,13 @@ Resources:
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/8dafde76-732a-4297-aa6c-bf449f7e4683)
 
+Let's run this package:
+
+$ sam package --template-file dynamo-sam.yml --s3-bucket demo-test-101 --output-template-file packaged-dynamo.yml
+
+
+
+
 
 
 
