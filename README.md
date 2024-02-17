@@ -87,7 +87,7 @@ Let's check in dynamo console
 
 # 1.Deploying basic lambda without any dependencies with SAM 
 
-Let's create simple lambda function
+Let's create simple lambda function (hello_country)
 
 ```json
 import json 
@@ -104,13 +104,16 @@ def lambda_handler(event, context):
             'headers': {'Content-Type': 'application/json'}}
 ```
 
-and test event
+Test event (test1)
 
 ```json
 {
   "Country": "USA"
 }
 ```
+
+and lambda SAM (lambda-sam.yml)
+
 
 
 
