@@ -129,13 +129,29 @@ Resources:
      
 ```
 
+# Create s3 bucket
+
+Let's create s3 bucket first. Here  "demotest-101"
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/7a35244b-8ec4-4be2-b00d-407a2f97fac2)
+
 # Create lambda template with SAM
 
 Let's run this package:
 
-$ sam package --template-file lambda-sam.yml --s3-bucket demo-test-101 --output-template-file packaged-lambda.yml
+$ sam package --template-file lambda-sam.yml --s3-bucket demotest-101 --output-template-file packaged-lambda.yml
 
+The pacckage is downloaded in SAM repo of Cloud9
 
+This packaged-lambda.yml is not the same as lambda-sam.yml
+
+lambda-sam.ym
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/f9c71e64-3d22-49de-9868-830e44c9ffe1)
+
+packaged-lambda.yml 
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/bcb9b1c2-d65b-4eee-ae9c-be51461ec16f)
 
 
 
