@@ -19,7 +19,7 @@ Check SAM version in Cloud9
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/eaf75ddf-e533-4396-8099-7728550b1649)
 
-# 1.Creating the AWS SAM Template
+# 1.Creating the AWS SAM Template: create dynamo table with SAM 
 
 The AWS SAM template is the heart of our serverless application deployment. It defines the resources and configurations required for our application. 
 
@@ -83,6 +83,38 @@ Let's check in dynamo console
 
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/f7a4c56a-1940-4d0a-bc23-ccf686d9980a)
+
+
+# 1.Deploying basic lambda without any dependencies with SAM 
+
+Let's create simple lambda function
+
+```json
+import json 
+import datetime
+def lambda_handler(event, context):
+    # TODO implement 
+    print(event)
+    data = {
+       'output': 'Hello from '+ event['Country'],
+        'timestamp': datetime.datetime.utcnow().isoformat()
+    }
+    return {'statusCode': 200,
+            'body': json.dumps(data),
+            'headers': {'Content-Type': 'application/json'}}
+```
+
+and test event
+
+```json
+{
+  "Country": "USA"
+}
+```
+
+
+
+
 
 
 
