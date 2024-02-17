@@ -114,6 +114,20 @@ Test event (test1)
 
 and lambda SAM (lambda-sam.yml)
 
+```json
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Test Pipeline Lambda
+Resources:
+  samfunction:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+        Handler: hello_country.lambda_handler
+        Runtime: python3.9
+        ContentUri: ./SAM/lambdacode/lambda-sam/hello_country.py
+        Description: Sample SAM lambda deployment
+     
+```
 
 
 
