@@ -19,6 +19,33 @@ Check SAM version in Cloud9
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/eaf75ddf-e533-4396-8099-7728550b1649)
 
+# Creating the AWS SAM Template
+
+The AWS SAM template is the heart of our serverless application deployment. It defines the resources and configurations required for our application. 
+
+## Create dynamo table with SAM 
+
+Here's an example of a simple AWS SAM template: Dynamo Table
+
+```json
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Test Dynamo Table
+Resources:
+  Dynamosam:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      PrimaryKey: 
+          Name: id
+          Type: String
+      ProvisonedThroughput:
+        ReadCapacityUnits: 5 
+        WriteCapacityUnits: 5 
+```
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/8dafde76-732a-4297-aa6c-bf449f7e4683)
+
+
 
 
 
