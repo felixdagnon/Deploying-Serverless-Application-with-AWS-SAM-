@@ -129,7 +129,7 @@ Resources:
      
 ```
 
-# Create lambda template
+# Create lambda template with SAM
 
 Let's run this package:
 
