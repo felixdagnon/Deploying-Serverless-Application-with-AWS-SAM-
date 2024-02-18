@@ -168,18 +168,22 @@ $ sam deploy --template-file packaged-lambda.yml --stack-name lambdasamstack --c
 
 The package is running and changeset created in cloudformation
 
-![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/dbd84155-7da4-405e-948b-f8e9e28db067)
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/1b5cf5ec-a2d1-4445-890f-1e1d3993b5cd)
 
-Let's see Cloudformation
+Let's see Cloudformation. The stack is created
 
-![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/4a86aec3-c128-4110-beff-0fbd07907913)
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/9e51e586-dfdf-4c7e-b323-552af17deb8e)
 
-Let's check in dynamo console
+Let's check in lambda console
 
-![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/5093a8f4-280b-4b96-af06-5107c479c937)
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/a73f0359-b519-4375-9d18-96196dce5d18)
 
+Lambda deployment succeed
 
-![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/f7a4c56a-1940-4d0a-bc23-ccf686d9980a)
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/92534b39-799c-4573-93ff-dfca35ca9eb9)
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/38385a28-8ab6-461a-a825-2324c27db924)
+
 
 
 
