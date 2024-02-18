@@ -247,7 +247,7 @@ It create libraries and template.yml and the codeurl is samFunction folder
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/1ed80443-3fea-4d44-a9b8-e9c70308ff80)
 
-## Check s3 bucktet
+## Local testng with SAM
 
 How to do it?
 
@@ -267,11 +267,28 @@ I resolve it  by changing the runtine:python3.8 to  Runtime: python3.10 in templ
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/34c41a18-7111-4a3b-9da8-aaf9d5ac353a)
 
-Let' run it again
+Let' run it again. The function is called localy and not deployed. Local testing succeed we have "Hello from USA"
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/77cde54e-001b-45f8-bc25-f1aaca048402)
 
-The running is ok
+Let's change testing event test1.json  "Country": "USA" to  "Country": "France"
+
+```json
+{
+  "Country": "France"
+}
+```
+
+Testing ok.  we have "Hello from France"
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/584f3629-1135-4187-97d8-a60acf140a5f)
+
+
+
+
+
+
+
 
 
 
