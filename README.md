@@ -63,7 +63,7 @@ packaged-dynamo.yml
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/ba01af36-e1e3-40b2-b393-484eaf21e5c2)
 
-# Deploying package
+# Deploying dynamo table package with SAM
 
 To deploy the package rune the below command
 
@@ -143,7 +143,7 @@ $ sam package --template-file lambda-sam.yml --s3-bucket demotest-101 --output-t
 
 The pacckage is downloaded in SAM repo of Cloud9
 
-This packaged-lambda.yml is not the same as lambda-sam.yml
+This packaged-lambda.yml is not the same as lambda-sam.yml. It take the code from local directory and put it in s3 bucket.
 
 lambda-sam.ym
 
@@ -151,7 +151,35 @@ lambda-sam.ym
 
 packaged-lambda.yml 
 
-![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/bcb9b1c2-d65b-4eee-ae9c-be51461ec16f)
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/8125280b-2664-4726-a6a1-626e12fbb081)
+
+Let's check s3 bucket
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/ec423f27-d1b4-482a-8381-88230469a158)
+
+
+
+
+# Deploying lambda package with SAM
+
+To deploy the package rune the below command
+
+$ sam deploy --template-file packaged-lambda.yml --stack-name lambdasamstack --capabilities CAPABILITY_IAM
+
+The package is running and changeset created in cloudformation
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/dbd84155-7da4-405e-948b-f8e9e28db067)
+
+Let's see Cloudformation
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/4a86aec3-c128-4110-beff-0fbd07907913)
+
+Let's check in dynamo console
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/5093a8f4-280b-4b96-af06-5107c479c937)
+
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/f7a4c56a-1940-4d0a-bc23-ccf686d9980a)
 
 
 
