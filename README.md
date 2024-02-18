@@ -247,7 +247,7 @@ It create libraries and template.yml and the codeurl is samFunction folder
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/1ed80443-3fea-4d44-a9b8-e9c70308ff80)
 
-## Local testng with SAM
+## Local testng external dependencies with SAM
 
 How to do it?
 
@@ -282,6 +282,12 @@ Let's change testing event test1.json  "Country": "USA" to  "Country": "France"
 Testing ok.  we have "Hello from France"
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/584f3629-1135-4187-97d8-a60acf140a5f)
+
+## Deploying external dependencies with SAM
+
+
+
+
 
 
 
