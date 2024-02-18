@@ -319,6 +319,12 @@ requests install and deployed
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/3dc7c05b-9522-40f6-b57a-5a8261b33f71)
 
 
+# In this demo I learn:
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/901b1d06-e3e8-431b-9146-7e25e3fc2aba)
+
+
+
 
 
 
