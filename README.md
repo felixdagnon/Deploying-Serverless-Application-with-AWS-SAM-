@@ -66,7 +66,7 @@ packaged-dynamo.yml
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/ba01af36-e1e3-40b2-b393-484eaf21e5c2)
 
-# Deploying dynamo table package with SAM
+## Deploying dynamo table package with SAM
 
 To deploy the package rune the below command
 
@@ -115,7 +115,7 @@ Test event (test1)
 }
 ```
 
-and lambda SAM (lambda-sam.yml)
+and lambda SAM template (lambda-sam.yml)
 
 ```json
 AWSTemplateFormatVersion: '2010-09-09'
@@ -132,13 +132,13 @@ Resources:
      
 ```
 
-# Create s3 bucket
+## Create s3 bucket
 
 Let's create s3 bucket first. Here  "demotest-101"
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/7a35244b-8ec4-4be2-b00d-407a2f97fac2)
 
-# Create lambda template with SAM
+## Create lambda template with SAM
 
 Let's run this package:
 
@@ -160,7 +160,7 @@ Let's check s3 bucket
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/ec423f27-d1b4-482a-8381-88230469a158)
 
-# Deploying lambda package with SAM
+## Deploying lambda package with SAM
 
 To deploy the package rune the below command
 
@@ -184,7 +184,7 @@ Lambda deployment succeed
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/38385a28-8ab6-461a-a825-2324c27db924)
 
-2.Deploying lambda with SAM: external dependencies and local testing with SAM
+# 3.Deploying lambda with SAM: external dependencies and local testing with SAM
 
 I use the same lambda but this time I put library "Import requests". This is the external library we need to install
 
@@ -204,6 +204,8 @@ def lambda_handler(event, context):
             'headers': {'Content-Type': 'application/json'}}
 ```
 
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/c2f70742-a21e-4fd8-8135-fc6c2f2a726a)
+
 In the lambda-sam folder I put file requirements.txt where I put in the external dependeencies I have to install
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/d0ad68af-5684-4faf-9970-4143a837a3c3)
@@ -212,9 +214,57 @@ To test it, I create test1.json file wher I am passing the input event
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/89b6ce38-f19c-47a6-ba4a-fbc921da4a8c)
 
+##  Install external packages
+
+Before, I need to create AWS SAM template. here lambda-dependencies-sam.yml
+
+```json
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Test Pipeline Lambda
+Resources:
+  samfunction:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+        Handler: hello_country.lambda_handler
+        Runtime: python3.9
+        ContentUri: ./SAM/lambdacode/
+        Description: Sample SAM lambda deployment
+```
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/73aad24d-7250-49d3-a76e-2daa3e4bde2f)
 
 
-![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/c2f70742-a21e-4fd8-8135-fc6c2f2a726a)
+To install external packages we have to do build request of SAM to create artefacts
+
+sam build --template lambda-dependencies-sam.yml --manifest ./lambda-code/requirements.txt
+
+The bild succeed. It created this ".aws-sam" folder. It create libraries which include external dependencies and template.yml
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/aba79b77-b5f9-4e62-b35e-14eca42afd33)
+
+It create libraries and template.yml and the codeurl is samFunction folder
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/1ed80443-3fea-4d44-a9b8-e9c70308ff80)
+
+## Check s3 bucktet
+
+How to do it?
+
+SAM try always gives the next command in the log
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/03d707cd-7177-433f-bb59-e3a132f3a2d7)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
