@@ -237,7 +237,7 @@ Resources:
 
 To install external packages we have to do build request of SAM to create artefacts
 
-sam build --template lambda-dependencies-sam.yml --manifest ./lambda-code/requirements.txt
+sam build --template lambda-dependencies-sam.yml --manifest ./lambda-sam/requirements.txt
 
 The bild succeed. It created this ".aws-sam" folder. It create libraries which include external dependencies and template.yml
 
@@ -254,6 +254,31 @@ How to do it?
 SAM try always gives the next command in the log
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/03d707cd-7177-433f-bb59-e3a132f3a2d7)
+
+First let's do invoke command
+
+$ sam local invoke --event ./lambda-code/test1.json
+
+I have error from  urllib3  library
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/1dc7e0ad-6643-4967-acff-a0e66ccd5067)
+
+I resolve it  by changing the runtine:python3.8 to  Runtime: python3.10 in template.yml and lambda-dependencies-sam.yml files
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/34c41a18-7111-4a3b-9da8-aaf9d5ac353a)
+
+Let' run it again
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/77cde54e-001b-45f8-bc25-f1aaca048402)
+
+The running is ok
+
+
+
+
+
+
+
 
 
 
