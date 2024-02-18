@@ -314,6 +314,8 @@ Lambda deployment succeed
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/14c949aa-29db-4f20-886d-eafa7b73205e)
 
+requests install and deployed
+
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/3dc7c05b-9522-40f6-b57a-5a8261b33f71)
 
 
