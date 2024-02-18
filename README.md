@@ -285,6 +285,39 @@ Testing ok.  we have "Hello from France"
 
 ## Deploying external dependencies with SAM
 
+We have to package it befor deploy it
+
+$ sam package --template-file .aws-sam/buid/template.yaml --s3-bucket demotest-101 --output-template-file packaged-lambda-dependencies.yml
+
+Pacckage uploded and codeurl pointing to s3 "CodeUri: s3://demotest-101/fb7dc31806cff9ac26b02ea41e92a667"
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/6981a66a-dc7a-490f-ac7b-19868e019945)
+
+Now let's deploy with this command:
+
+sam deploy --stack-name lambdadepen --template-file packaged-lambda-dependencies.yml --capabilities CAPABILITY_IAM
+
+
+The package is running and changeset created in cloudformation
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/db9cf105-d564-4fdd-af15-3b577c643585)
+
+Let's see Cloudformation. The stack is created
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/6a79a6d7-c6a2-467b-ad4b-48987cc429a4)
+
+Let's check in lambda console
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/ffe7bcf2-27c3-47de-8171-f31a6a669123)
+
+Lambda deployment succeed
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/14c949aa-29db-4f20-886d-eafa7b73205e)
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/3dc7c05b-9522-40f6-b57a-5a8261b33f71)
+
+
+
 
 
 
