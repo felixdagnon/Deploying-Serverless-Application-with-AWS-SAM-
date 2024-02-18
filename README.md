@@ -3,6 +3,9 @@ Deploying  Serverless Application with AWS SAM Serverless Application Model: A S
 
 ##  What is SAM
 
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/e7df9eac-71b9-42d9-85f3-d034a6894ef5)
+
+
 Enabling you to save time and build, test, and deploy serverless applications faster.
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/3bd85a74-8ffa-45cc-a49e-14d82f277884)
