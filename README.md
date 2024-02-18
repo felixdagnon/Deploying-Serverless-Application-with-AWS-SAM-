@@ -1,6 +1,10 @@
 # Deploying-Serverless-Application-with-AWS-SAM
 Deploying  Serverless Application with AWS SAM Serverless Application Model: A Step-by-Step
 
+# In this demo I learn:
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/901b1d06-e3e8-431b-9146-7e25e3fc2aba)
+
 ##  What is SAM
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/e7df9eac-71b9-42d9-85f3-d034a6894ef5)
@@ -317,12 +321,6 @@ Lambda deployment succeed
 requests installed and deployed
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/3dc7c05b-9522-40f6-b57a-5a8261b33f71)
-
-
-# In this demo I learn:
-
-![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/901b1d06-e3e8-431b-9146-7e25e3fc2aba)
-
 
 
 
