@@ -184,8 +184,37 @@ Lambda deployment succeed
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/38385a28-8ab6-461a-a825-2324c27db924)
 
-2.Deploying lambda with SAM: local testing with external dependencies 
+2.Deploying lambda with SAM: external dependencies and local testing with SAM
 
+I use the same lambda but this time I put library "Import requests". This is the external library we need to install
+
+```json
+import json 
+import datetime
+Import requests
+def lambda_handler(event, context):
+    # TODO implement 
+    print(event)
+    data = {
+       'output': 'Hello from '+ event['Country'],
+        'timestamp': datetime.datetime.utcnow().isoformat()
+    }
+    return {'statusCode': 200,
+            'body': json.dumps(data),
+            'headers': {'Content-Type': 'application/json'}}
+```
+
+In the lambda-sam folder I put file requirements.txt where I put in the external dependeencies I have to install
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/d0ad68af-5684-4faf-9970-4143a837a3c3)
+
+To test it, I create test1.json file wher I am passing the input event
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/89b6ce38-f19c-47a6-ba4a-fbc921da4a8c)
+
+
+
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/c2f70742-a21e-4fd8-8135-fc6c2f2a726a)
 
 
 
