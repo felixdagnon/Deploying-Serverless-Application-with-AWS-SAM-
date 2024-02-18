@@ -157,9 +157,6 @@ Let's check s3 bucket
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/ec423f27-d1b4-482a-8381-88230469a158)
 
-
-
-
 # Deploying lambda package with SAM
 
 To deploy the package rune the below command
@@ -183,6 +180,9 @@ Lambda deployment succeed
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/92534b39-799c-4573-93ff-dfca35ca9eb9)
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/38385a28-8ab6-461a-a825-2324c27db924)
+
+2.Deploying lambda with SAM: local testing with external dependencies 
+
 
 
 
