@@ -16,7 +16,7 @@ code as per SAM specification.
 
 # In this demo we learn:
 
-![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/901b1d06-e3e8-431b-9146-7e25e3fc2aba)
+![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/137cc461-69df-46af-bbe8-bc4cee1c82fd)
 
 ##  What is SAM
 
