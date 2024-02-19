@@ -9,9 +9,9 @@ language created by optimizing cloud formation templates further for serverless 
 
 Because of this, you end up writing few lines of code of SAM template, which in turn gets converted into a lot more lines of code of
 
-cloudformation template. However, SAM has specific opinions on your code structure should be, so we will be making changes to our code as 
+cloudformation template. However, SAM has specific opinions on your code structure should be, so we will be making changes to our
 
-per SAM specification.
+code as per SAM specification.
 
 
 # In this demo we learn:
