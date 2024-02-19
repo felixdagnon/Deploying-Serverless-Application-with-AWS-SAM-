@@ -1,6 +1,19 @@
 # Deploying-Serverless-Application-with-AWS-SAM
 Deploying  Serverless Application with AWS SAM Serverless Application Model: A Step-by-Step
 
+This time, we will look at one more method for deploying serverless projects. It is called AWS Serverless Application Model or SAM
+
+in short. AWS SAM is an open-source specification for deployment of serverless projects. It is like a domain specific deployment
+
+language created by optimizing cloud formation templates further for serverless projects.
+
+Because of this, you end up writing few lines of code of SAM template, which in turn gets converted into a lot more lines of code of
+
+cloudformation template. However, SAM has specific opinions on your code structure should be, so we will be making changes to our code as 
+
+per SAM specification.
+
+
 # In this demo we learn:
 
 ![image](https://github.com/felixdagnon/Deploying-Serverless-Application-with-AWS-SAM-/assets/91665833/901b1d06-e3e8-431b-9146-7e25e3fc2aba)
