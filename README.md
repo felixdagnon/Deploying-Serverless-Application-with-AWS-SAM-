@@ -106,7 +106,7 @@ Let's check in dynamo console
 
 Let's create simple lambda function (hello_country)
 
-```json
+```py
 import json 
 import datetime
 def lambda_handler(event, context):
@@ -131,7 +131,7 @@ Test event (test1)
 
 and lambda SAM template (lambda-sam.yml)
 
-```json
+```yml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: Test Pipeline Lambda
@@ -202,7 +202,7 @@ Lambda deployment succeed
 
 I use the same lambda but this time I put library "Import requests". This is the external library we need to install
 
-```json
+```py
 import json 
 import datetime
 Import requests
@@ -232,7 +232,7 @@ To test it, I create test1.json file wher I am passing the input event
 
 Before, I need to create AWS SAM template. here lambda-dependencies-sam.yml
 
-```json
+```yml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: Test Pipeline Lambda
