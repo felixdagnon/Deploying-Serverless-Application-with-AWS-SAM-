@@ -46,7 +46,7 @@ The AWS SAM template is the heart of our serverless application deployment. It d
 
 Here's an example of a simple AWS SAM template: Dynamo Table
 
-```json
+```yml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: Test Dynamo Table
